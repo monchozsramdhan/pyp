@@ -32,7 +32,49 @@
     @media(max-width:560px){.floor{min-height:480px}.floor-table{transform:scale(.82)}.floor-table:hover{transform:scale(.88)}.booking-search{grid-template-columns:1fr}.booking-search .btn{grid-column:auto}}
     .customer-portal .sidebar{display:none}.customer-portal .main{margin-left:0;width:100%;max-width:1240px;margin-inline:auto;padding:28px 34px 55px}.customer-portal .top{padding:0 5px 25px;border-bottom:1px solid var(--line);margin-bottom:30px}.customer-portal .top h1{font-size:32px}.customer-portal .crumb{font-size:11px;letter-spacing:.7px;text-transform:uppercase;color:var(--green);font-weight:700}.customer-portal .top-actions .live{display:none}.customer-portal .top-actions:before{content:"Questions? WhatsApp us";color:var(--muted);font-size:12px}.customer-portal .top-actions .btn{display:none}.customer-portal .summary{display:none}.customer-portal .booking-search{max-width:900px;margin:0 auto 26px;padding:17px}.customer-portal .floor-layout{max-width:1180px;margin:0 auto}.customer-portal .floor-panel{padding:24px}.customer-portal .floor-head h2{font-size:22px}.customer-portal .floor-head p{font-size:13px}.customer-portal #tables,.customer-portal #reservations,.customer-portal #customers,.customer-portal #reports{display:none!important}.customer-portal #dashboard>.panel-heading{display:none}.customer-portal #table-grid,.customer-portal #timeline{display:none!important}.customer-portal .modal h2:after{content:"";display:block}.customer-portal footer{display:block;text-align:center;color:var(--muted);font-size:11px;margin-top:26px}.customer-portal .field:nth-child(2){display:none}
     .customer-portal .menu{display:none}
+    .customer-portal .top-brand{display:flex;align-items:center;gap:16px}
+    .customer-portal .brand-logo{width:108px;height:auto;display:block}
+    .customer-portal .brand-divider{height:28px;width:1px;background:#dfe7df}
     @media(max-width:760px){.customer-portal .main{padding:18px 12px 35px}.customer-portal .top{padding-bottom:18px;margin-bottom:20px}.customer-portal .top h1{font-size:25px}.customer-portal .top-actions:before{content:"Need help? WhatsApp us";font-size:11px}.customer-portal .floor-panel{padding:14px}.customer-portal .floor-head{display:block}.customer-portal .legend{margin-top:12px;gap:8px}.customer-portal .floor-aside{margin-top:0}}
+    .customer-portal{background:linear-gradient(180deg,#fbfaf7 0,#f4f6f1 100%);color:#243229}
+    .customer-portal .main{max-width:1320px;padding-top:34px}
+    .customer-portal .top{border-bottom:0;margin-bottom:24px;padding:0 10px;align-items:center}
+    .customer-portal .crumb{display:flex;align-items:center;gap:8px;color:#a2633f;letter-spacing:1.2px}
+    .customer-portal .crumb:before{content:"";width:24px;height:1px;background:#c9875d}
+    .customer-portal .top h1{font-size:38px;letter-spacing:-.8px;color:#1f3026}
+    .customer-portal .top-actions:before{padding:10px 14px;border:1px solid #e2e7df;border-radius:999px;background:#fff;color:#68756c;box-shadow:0 5px 16px #24322908}
+    .customer-portal .booking-search{position:relative;z-index:2;max-width:940px;margin:0 auto 28px;padding:19px 20px;border:1px solid #e0e7df;border-radius:16px;box-shadow:0 15px 35px #29412d12}
+    .customer-portal .booking-search:before{content:"Plan your visit";position:absolute;left:20px;top:-11px;padding:2px 9px;background:#fbfaf7;color:#a2633f;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+    .customer-portal .booking-search label{color:#66736a}
+    .customer-portal .booking-search input,.customer-portal .booking-search select{border-color:#dfe7df;background:#fcfdfb;padding:12px}
+    .customer-portal .booking-search input:focus,.customer-portal .booking-search select:focus{border-color:#b8734f;box-shadow:0 0 0 3px #b8734f18}
+    .customer-portal .booking-search .btn{border-radius:9px;background:#b56d48;box-shadow:0 8px 18px #b56d4833}
+    .customer-portal .booking-search .btn:hover{background:#9f5b3a}
+    .customer-portal .floor-layout{gap:20px}
+    .customer-portal .floor-panel,.customer-portal .floor-aside{border-color:#dfe7df;border-radius:16px;box-shadow:0 14px 35px #29412d0b}
+    .customer-portal .floor-panel{padding:25px;background:rgba(255,255,255,.88)}
+    .customer-portal .floor-head{margin-bottom:18px}
+    .customer-portal .floor-head h2{font-size:23px;letter-spacing:-.3px}
+    .customer-portal .floor-head p{margin-top:4px;color:#7e8b82}
+    .customer-portal .legend{font-size:10px}
+    .customer-portal .legend i{width:8px;height:8px}
+    .customer-portal .floor{min-height:620px;border:1px solid #b7c4b9;border-radius:10px;background:linear-gradient(145deg,#fffefa,#f8faf6);box-shadow:inset 0 0 0 7px #fff,inset 0 0 0 8px #e7ede6}
+    .customer-portal .floor:before{border-top:6px solid #eee9df;box-shadow:0 -1px 0 #dfe6de}
+    .customer-portal .room-label{font-size:9px;color:#a4aea6;letter-spacing:1.5px}
+    .customer-portal .floor-table{border-color:#b2c1b5;background:#fff;box-shadow:0 5px 10px #2b443116;color:#68766b}
+    .customer-portal .floor-table.available{background:#f0f8f1;border-color:#76aa83;color:#2c6e49}
+    .customer-portal .floor-table.booked{background:#fff5e9;border-color:#df9b55;color:#b36e28}
+    .customer-portal .floor-table.occupied{background:#fcecea;border-color:#d17b75;color:#b25852}
+    .customer-portal .floor-table.maintenance{background:#f0f2ef;border-color:#b5bdb6}
+    .customer-portal .floor-table:hover{box-shadow:0 9px 18px #2b44312b}
+    .customer-portal .floor-table.selected{outline-color:#b56d4866;box-shadow:0 0 0 5px #b56d4818,0 9px 18px #2b44312b}
+    .customer-portal .floor-aside{padding:21px;background:#fff}
+    .customer-portal .floor-aside h3{font-size:16px}
+    .customer-portal .selection-empty{background:#fafcf9;border-color:#dfe7df}
+    .customer-portal .selection-detail .btn{background:#b56d48;box-shadow:0 7px 16px #b56d4830}
+    .customer-portal footer{color:#8c978f}
+    @media(max-width:760px){.customer-portal .main{padding-top:20px}.customer-portal .top{padding:0 3px;margin-bottom:20px}.customer-portal .top h1{font-size:29px}.customer-portal .top-actions:before{padding:7px 10px}.customer-portal .booking-search{padding:17px 14px;border-radius:13px}.customer-portal .booking-search:before{left:14px}.customer-portal .floor{min-height:510px}.customer-portal .floor-panel{padding:16px}.customer-portal .brand-logo{width:88px}.customer-portal .brand-divider{display:none}.customer-portal .top-brand{gap:9px}.customer-portal .top-brand .crumb{font-size:9px}.customer-portal .top-brand h1{font-size:24px}.customer-portal .top-actions:before{content:"WhatsApp";font-size:10px}}
+    @media(max-width:430px){.customer-portal .top{align-items:flex-start}.customer-portal .top-brand{display:block}.customer-portal .brand-logo{width:78px;margin-bottom:10px}.customer-portal .top-brand h1{font-size:22px}.customer-portal .top-actions:before{padding:6px 8px}.customer-portal .floor{min-height:430px}.customer-portal .floor-table{transform:scale(.72)}.customer-portal .floor-table:hover{transform:scale(.78)}.customer-portal .room-label{font-size:8px}.customer-portal .floor-head h2{font-size:19px}}
   </style>
 </head>
 <body class="customer-portal">
@@ -52,7 +94,7 @@
     <div class="side-bottom"><div class="user"><div class="avatar">AN</div><div>Andi Nugraha<br><small style="color:#9db2a2;font-weight:400">Administrator</small></div></div></div>
   </aside>
   <main class="main">
-    <header class="top"><div style="display:flex;gap:12px;align-items:start"><button class="menu" id="menu">☰</button><div><div class="crumb">pypcoffee · Table reservation</div><h1 id="page-title">Find your perfect table</h1></div></div><div class="top-actions"><div class="live"><i></i> Live sync</div><button class="btn primary" id="new-booking">＋ New booking</button></div></header>
+    <header class="top"><div class="top-brand"><button class="menu" id="menu">☰</button><img class="brand-logo" src="pyp-logo.svg" alt="pypcoffee"><span class="brand-divider"></span><div><div class="crumb">Table reservation</div><h1 id="page-title">Find your perfect table</h1></div></div><div class="top-actions"><div class="live"><i></i> Live sync</div><button class="btn primary" id="new-booking">＋ New booking</button></div></header>
     <section class="section active" id="dashboard">
       <div class="summary" id="summary"></div>
       <div class="booking-search"><label>Booking date<input id="floor-date" type="date" value="2026-09-09"></label><label>Start time<input id="floor-time" type="time" value="18:00"></label><label>Guests<select id="floor-guests"><option>2 guests</option><option>4 guests</option><option>6 guests</option><option>8 guests</option></select></label><button class="btn primary" id="floor-search">Find available tables</button></div>
@@ -74,6 +116,7 @@ const seedReservations=[['Andi Pratama','081234567890',2,'2026-09-09','18:00','2
 let data=JSON.parse(localStorage.getItem(KEY)||'null')||{tables:seedTables,reservations:seedReservations.map((r,i)=>({id:`RSV-${String(i+1).padStart(3,'0')}`,name:r[0],phone:r[1],tableId:r[2],date:r[3],start:r[4],end:r[5],guests:seedTables[r[2]-1].capacity,status:r[6],notes:''}))};
 function save(){localStorage.setItem(KEY,JSON.stringify(data))}
 function table(id){return data.tables.find(t=>t.id===Number(id))}
+function reservationId(tableId,date,start){const t=table(tableId),[year,month,day]=date.split('-');return `RSVP/${t.no}/${start.replace(':','')}/${day}/${month}/${year}`}
 function activeRes(t, date=today){const now='16:01';return data.reservations.filter(r=>r.tableId===t.id&&r.date===date&&!['Completed','Cancelled'].includes(r.status)&&r.end>now).sort((a,b)=>a.start.localeCompare(b.start))[0]}
 function effectiveStatus(t){if(t.status==='maintenance')return 'maintenance';const r=activeRes(t);if(!r)return 'available';return r.status==='Occupied'?'occupied':'booked'}
 function statusPill(s){return `<span class="pill ${s.toLowerCase()}">${s.toUpperCase()}</span>`}
@@ -102,7 +145,7 @@ document.querySelectorAll('[data-page-link]').forEach(b=>b.onclick=()=>document.
 document.querySelector('#menu').onclick=()=>document.querySelector('#sidebar').classList.toggle('open');
 ['#new-booking','#new-booking-2','#new-booking-3'].forEach(s=>document.querySelector(s).onclick=()=>openBooking());
 document.querySelector('#close-modal').onclick=closeBooking;document.querySelector('#cancel-modal').onclick=closeBooking;
-document.querySelector('#booking-form').onsubmit=e=>{e.preventDefault();const r={id:`RSV-${String(data.reservations.length+1).padStart(3,'0')}`,name:document.querySelector('#f-name').value.trim(),phone:document.querySelector('#f-phone').value.trim(),tableId:Number(document.querySelector('#f-table').value),date:document.querySelector('#f-date').value,start:document.querySelector('#f-start').value,end:document.querySelector('#f-end').value,guests:Number(document.querySelector('#f-guests').value),status:document.querySelector('#f-status').value,notes:document.querySelector('#f-notes').value.trim()};const t=table(r.tableId);if(!r.name||!r.phone)return toast('Nama dan WhatsApp wajib diisi');if(r.end<=r.start)return toast('Jam selesai harus setelah jam mulai');if(r.guests>t.capacity)return toast(`Maksimal kapasitas meja ini ${t.capacity} orang`);if(t.status==='maintenance')return toast('Meja sedang maintenance');if(data.reservations.some(x=>x.id!==r.id&&!['Completed','Cancelled'].includes(x.status)&&x.tableId===r.tableId&&overlaps(r,x)))return toast('Waktu booking bentrok dengan reservation lain');data.reservations.push(r);save();const message=['Halo pypcoffee, saya ingin melakukan reservasi meja.','',`Nama: ${r.name}`,`WhatsApp customer: ${r.phone}`,`No. meja: Table ${t.no}`,`Tanggal: ${r.date}`,`Waktu: ${r.start} - ${r.end}`,`Jumlah tamu: ${r.guests} orang`,`Catatan: ${r.notes||'-'}`,'',`ID reservasi: ${r.id}`].join('\n');window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,'_blank');closeBooking();render();toast(`Detail Table ${t.no} dibuka di WhatsApp`)};
+document.querySelector('#booking-form').onsubmit=e=>{e.preventDefault();const tableId=Number(document.querySelector('#f-table').value),date=document.querySelector('#f-date').value,start=document.querySelector('#f-start').value;const r={id:reservationId(tableId,date,start),name:document.querySelector('#f-name').value.trim(),phone:document.querySelector('#f-phone').value.trim(),tableId,date,start,end:document.querySelector('#f-end').value,guests:Number(document.querySelector('#f-guests').value),status:document.querySelector('#f-status').value,notes:document.querySelector('#f-notes').value.trim()};const t=table(r.tableId);if(!r.name||!r.phone)return toast('Nama dan WhatsApp wajib diisi');if(r.end<=r.start)return toast('Jam selesai harus setelah jam mulai');if(r.guests>t.capacity)return toast(`Maksimal kapasitas meja ini ${t.capacity} orang`);if(t.status==='maintenance')return toast('Meja sedang maintenance');if(data.reservations.some(x=>x.id!==r.id&&!['Completed','Cancelled'].includes(x.status)&&x.tableId===r.tableId&&overlaps(r,x)))return toast('Waktu booking bentrok dengan reservation lain');data.reservations.push(r);save();const message=['Halo pypcoffee, saya ingin melakukan reservasi meja.','',`Nama: ${r.name}`,`WhatsApp customer: ${r.phone}`,`No. meja: Table ${t.no}`,`Tanggal: ${r.date}`,`Waktu: ${r.start} - ${r.end}`,`Jumlah tamu: ${r.guests} orang`,`Catatan: ${r.notes||'-'}`,'',`ID reservasi: ${r.id}`].join('\n');window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,'_blank');closeBooking();render();toast(`Detail Table ${t.no} dibuka di WhatsApp`)};
 ['#dash-search','#dash-filter','#table-search','#table-filter','#capacity-filter','#reservation-search','#reservation-status','#reservation-date'].forEach(s=>document.querySelector(s)?.addEventListener('input',render));
 ['#floor-date','#floor-time','#floor-guests'].forEach(s=>document.querySelector(s)?.addEventListener('change',renderFloorPlan));
 document.querySelector('#floor-search').onclick=()=>{renderFloorPlan();toast('Floor plan diperbarui sesuai waktu pilihan')};
