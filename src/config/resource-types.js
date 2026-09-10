@@ -1,0 +1,7 @@
+window.pypResourceTypes = Object.freeze({
+  TABLE: 'TABLE',
+  COWORKING: 'COWORKING',
+  MEETING_ROOM: 'MEETING_ROOM',
+  EVENT_SPACE: 'EVENT_SPACE',
+  PRIVATE_OFFICE: 'PRIVATE_OFFICE'
+});
